@@ -1,0 +1,69 @@
+@import "~src/assets/scss/config";
+@import "~src/assets/scss/theme-config";
+
+.#{ $style-prefix }-navbar {
+  height: 8vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  transition: height 0.05s ease;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+
+  &__navigations {
+    height: 100%;
+    position: relative;
+    padding: 0;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    transition: all 0.05s ease;
+    color: $font-primary;
+    font-weight: 300;
+    font-size: 18px;
+
+    &--inverse {
+      font-size: 20px;
+    }
+
+    @media screen and (min-width: 576px) {
+      font-size: 24px;
+    }
+  }
+
+
+  &--inverse {
+    height: 5vh;
+    background-color: $bg-primary;
+    opacity: .85;
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(73,80,87,0.7);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(73,80,87,0.7);
+    box-shadow: 0px 2px 5px 1px rgba(73,80,87,0.7);
+  }
+
+  &__link {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__top {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+
+}

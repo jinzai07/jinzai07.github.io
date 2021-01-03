@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~animate.css/animate.min";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: #36e49a;
+    text-decoration: underline;
+  }
+}
+
+ul {
+  margin: 0;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
