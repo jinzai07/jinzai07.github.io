@@ -10,7 +10,7 @@
     clip-path: ellipse(90% 70% at 50% 10%);
     height: 100vh;
     background: rgb(59,222,157);
-    background: linear-gradient(0deg, rgba(59,222,157,1) 16%, rgba(36,247,145,1) 53%, rgba(0,254,255,1) 100%);
+    background: linear-gradient(0deg, rgba(52,204,143,1) 16%, rgba(29,198,116,1) 53%, rgba(0,175,161,1) 100%);
   }
 
   &__chevron {
@@ -98,7 +98,7 @@
   &__cert {
     &--bg {
       background: rgb(59,222,157);
-      background: linear-gradient(180deg, rgba(59,222,157,1) 16%, rgba(36,247,145,1) 53%, rgba(0,254,255,1) 100%);
+      background: linear-gradient(180deg, rgba(52,204,143,1) 16%, rgba(29,198,116,1) 53%, rgba(0,175,161,1) 100%);
     }
 
     &--container {
@@ -161,7 +161,7 @@
   &__footer {
     min-height: 8vh;
     background-color: $font-primary;
-    color: $primary;
+    color: $bg-primary;
     display: flex;
     align-items: center;
     justify-content: center;
