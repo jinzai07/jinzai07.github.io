@@ -7,10 +7,15 @@
 
   &__ellipse {
     position: relative;
-    clip-path: ellipse(90% 70% at 50% 10%);
+    clip-path: ellipse(130% 70% at 50% 10%);
     height: 100vh;
     background: rgb(59,222,157);
     background: linear-gradient(0deg, rgba(56,228,159,1) 16%, rgba(29,198,116,1) 53%, rgba(0,175,161,1) 100%);
+
+
+    @media screen and (min-width: 576px) {
+      clip-path: ellipse(90% 70% at 50% 10%);
+    }
   }
 
   &__chevron {
