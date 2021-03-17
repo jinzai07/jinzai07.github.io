@@ -157,6 +157,10 @@
         transform: scale(1.2);
       }
     }
+
+    @media screen and (min-width: 576px) {
+      margin-top: 150px;
+    }
   }
 
   &__hr {
